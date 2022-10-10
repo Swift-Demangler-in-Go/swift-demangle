@@ -4,7 +4,7 @@ English | [CN中文](README_ZH.md)
 
 #### 1、What is it?
 
-This is a Swift Fuction (:neutral_face: em, yes, just Swift Function right now) Demangler. You can run the `main.go` to raise a `repl` tool. Then input the string you want to demangle, press the `Enter` :sparkling_heart:
+This is a Swift Fuction (:neutral_face: em, yes, just Swift Function right now) Demangler. You can simply import this package and demangle your mangled swift symbols:rocket:
 
 ### 二、Detail
 
