@@ -4,6 +4,8 @@
 
 package demangle
 
+import "errors"
+
 // Err 含错误信息的AST结点
 type Err struct {
 	err string
@@ -18,3 +20,8 @@ func (e *Err) Error() string {
 func (e *Err) Print(ps *PrintState) {
 	ps.WriteString(e.err)
 }
+
+var (
+	// ErrInvalidInput 输入不合法
+	ErrInvalidInput = errors.New("get invalid swift mangle parser")
+)

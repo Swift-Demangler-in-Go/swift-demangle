@@ -4,16 +4,12 @@
 
 package demangle
 
-import (
-	"errors"
-)
-
 // ToString 将mangle的符号输入，demangle后输出
 func ToString(input string, options ...Option) (string, error) {
 	var prefix string
 	var is bool
 	if prefix, is = HasSwiftPrefix(input); !is {
-		return "", errors.New("get invalid swift mangle parser")
+		return "", ErrInvalidInput
 	}
 	parser := NewParser(input, len(prefix))
 
