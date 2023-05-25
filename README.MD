@@ -1,5 +1,7 @@
 English | [CN中文](README_ZH.md)
 
+![Visualization of the codebase](./diagram.svg)
+
 ### 一、Swift Demangler in Go
 
 #### 1、What is it?
